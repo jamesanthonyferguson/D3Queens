@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>N Queens Frequency Visualisation</title>
+<!--     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"> -->
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="N Queens Frequency Visualisation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style> h1{
+      text-align: center;
+      } 
+      body{
+        margin-bottom: 20px;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row full">
+        <div class="col-sm-12"> 
+          <h1>N Queens Frequency Visualisation</h1>
+        </div>
+        <div class="col-xs-2"></div>
+      </div>
+    </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-xs-6 options">
+        <div class="btn-group">
+          <br/>
+          <button type="button" class="btn btn-default one">1</button>
+          <button type="button" class="btn btn-default four">4</button>
+          <button type="button" class="btn btn-default five">5</button>
+          <button type="button" class="btn btn-default six">6</button>
+          <button type="button" class="btn btn-default seven">7</button>
+          <button type="button" class="btn btn-default eight">8</button>
+          <button type="button" class="btn btn-default nine">9</button>
+          <button type="button" class="btn btn-default ten">10</button>
+          <button type="button" class="btn btn-default eleven">11</button>
+          <button type="button" class="btn btn-default twelve">12</button>
+        </div>
+      </div>
+      <div class="col-xs-4"></div>
+    </div>
+    <div class="row"><br/><br/></div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-6 visualisation"></div>
+      <div class="col-sm-4">
+        <div class="row">N Queens is a classic problem which requires working out how many ways n Queens can be placed on an n*n chessboard. Provided is a visualisation of the frequency analysis of where Queens are most frequently placed.
+        Darker blue tiles means Queens appear on these squares more frequently.</div>
+       <div class="row"><br/>Please wait until each board has finished animating before clicking another, for the best experience. This was created with D3.js</div>
+       </div>
+    </div>
+  </div>
+    <script src="lib/underscore.js"></script>
+    <script src="http://d3js.org/d3.v2.js"></script>
+    <script src="lib/backbone.js"></script>
+    <script src="src/Board.js"></script>
+    <script src="src/generateBoards.js"></script>
+    <script src="src/d3queens.js"></script>
+  </body>
+</html>
